@@ -24,7 +24,7 @@ if [ -e "$downloads_folder/$pem_file" ]; then
 	
 	ssh -i "$pem_file" ec2-user@"$ssh_parameters"
 
-	if [ $? -ne 0]; then
+	if [ $? -ne 0 ]; then
 		echo "Error: SSH connection failed. Check params and try again."
 	fi
 
