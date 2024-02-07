@@ -1,5 +1,3 @@
-┌──(abel㉿abel-kali)-[~]
-└─$ cat myScript.sh 
 #!/bin/bash
 
 # initialize dir path
