@@ -12,6 +12,7 @@ myName="Abel"
 
 if [ -f "$myFiles/.fileNumber" ]; then
 	fileNumber=$(< "$myFiles/.fileNumber")
+	((fileNumber++))
 else
 	touch "$myFiles/.fileNumber"
 	fileNumber=0;
