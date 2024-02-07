@@ -124,7 +124,7 @@ To get a local copy up and running, follow these steps.
 👤 **Abel Morara**
 - GitHub: [@githubhandle](https://github.com/ProgramKingAbel)
 - Twitter: [@twitterhandle](https://twitter.com/CeoAbel1)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abel-morara/
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abel-morara/)
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
