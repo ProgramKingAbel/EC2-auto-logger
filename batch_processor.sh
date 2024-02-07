@@ -1,3 +1,5 @@
+┌──(abel㉿abel-kali)-[~]
+└─$ cat myScript.sh 
 #!/bin/bash
 
 # initialize dir path
@@ -9,12 +11,13 @@ mkdir -p "$myFiles"
 # prefix
 
 myName="Abel"
+fileNumberTracker="$myFiles/.fileNumber"
 
-if [ -f "$myFiles/.fileNumber" ]; then
-	fileNumber=$(< "$myFiles/.fileNumber")
+if [ -f "$fileNumberTracker" ]; then
+	fileNumber=$(< "$fileNumberTracker")
 	((fileNumber++))
 else
-	touch "$myFiles/.fileNumber"
+	touch "$fileNumberTracker"
 	fileNumber=0;
 fi
 
@@ -26,7 +29,7 @@ for ((i = 1; i <=25; i++)); do
 	((fileNumber++))
 done
 
-echo "$fileNumber" > "$myFiles/.fileNumber"
+echo "$fileNumber" > "$fileNumberTracker"
 
 ls -la "$myFiles"
 
