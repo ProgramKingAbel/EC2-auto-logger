@@ -13,10 +13,9 @@ fileNumberTracker="$myFiles/.fileNumber"
 
 if [ -f "$fileNumberTracker" ]; then
 	fileNumber=$(< "$fileNumberTracker")
-	((fileNumber++))
 else
 	touch "$fileNumberTracker"
-	fileNumber=0;
+	fileNumber=1;
 fi
 
 
